@@ -1,0 +1,40 @@
+body{
+    background-color:lightcyan;
+}
+
+nav{
+    height:80px;
+}
+
+.navbar{
+    background-color:rgb(185, 197, 209);
+}
+
+li a{
+    color:navy !important;
+    font-size:20px;
+    font-weight: bolder;
+    margin-left:20px;
+}
+
+li a:hover{
+    color:darkorange !important;
+    background-color:wheat;
+}
+
+.navbar-toggler{
+    background-color:lightblue;
+}
+
+.nav-link{
+    padding:20px;
+}
+
+@media (max-width:600px){
+    nav{
+        height:auto;
+    }
+    .nav-link{
+        padding:10px;
+    }
+}
