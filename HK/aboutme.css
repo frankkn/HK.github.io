@@ -71,7 +71,7 @@
     text-align: center;
 }
 
-.btn{
+.card-body .btn{
     width:100%;
     height:68px;
     border:none;
@@ -84,6 +84,6 @@
     left:0;
 }
 
-.btn:hover{
+.card-body .btn:hover{
     color:gold;
 }
