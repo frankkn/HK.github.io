@@ -1,0 +1,89 @@
+.main-content{
+    background-color:mintcream;
+    border:3px solid black;
+}
+
+.main-content h1{
+    text-align: center;
+    color:navy;
+}
+
+.main-content ul{
+    display: flex;
+    margin-left:300px;
+}
+
+.main-content ul li{
+    list-style: none;
+}
+
+.main-content ul li a{
+    color:gray;
+    font-size: 80px;
+}
+
+.main-content ul li a .fa-facebook:hover{
+    color:blue;
+}
+
+.main-content ul li a .fa-line:hover{
+    color:green;
+}
+
+.main-content ul li a .fa-instagram:hover{
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+.profile-img{
+    width:150px;
+    height: 150px;
+    clip-path: circle(40%);
+
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top:0px;
+}
+
+.card{
+    background-color: beige;
+    height:500px;
+    width:30%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+
+    margin-left:350px;
+}
+
+.banner-image{
+    background-image: url(images/background.png);
+    height:200px;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+
+.card-title ,.card-text{
+    text-align: center;
+}
+
+.btn{
+    width:100%;
+    height:68px;
+    border:none;
+    font-size:20px;
+    color:white;
+    background-color: blueviolet;
+    padding:20px;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+.btn:hover{
+    color:gold;
+}
