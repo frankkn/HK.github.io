@@ -87,3 +87,9 @@
 .card-body .btn:hover{
     color:gold;
 }
+
+footer{
+    height:70px;
+    background-color:rgb(185, 197, 209);
+    padding-top:23px;
+}
