@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="slideshow.css">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="date.css">
+    <link rel="stylesheet" href="counter.css">
 </head>
-<body>
+<body onload="updateCounter()">
     <!--第一層 導覽列-->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
@@ -125,6 +127,12 @@
                 <div class="page">
                     <a href="https://youtu.be/TSaHKoejhm4" target="_blank"><button class="btn-link" >幻彩詠香江</button></a>
                 </div>
+                <div class="calendar">
+                    <p id="year"></p>  
+                    <p id="monthName"></p>  
+                    <p id="day"></p>  
+                    <p id="dayName"></p>  
+                </div>
             </div>
             <!--中間欄位-->
             <div class="col-sm-8 main-content text-left">
@@ -151,6 +159,13 @@
                     <img src="images/sidenav/蓮香樓燒臘.png">
                     <p>蓮香樓 - 臘味三拼</p>
                 </div>
+                <div class="counter">
+                    <p>來訪人數</p>
+                    <div class="container">
+                        <div><span id="visitors">  </span></div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -159,6 +174,22 @@
     <footer class="container-fluid text-center">
         <p>Written by Frank Yang on 3/8/2021&copy;</p>
     </footer>
+
+    <script src="date.js">
+
+    </script>
+    <script>
+            function updateCounter(){
+                var link="https://api.countapi.xyz/update/aaa/0629?amount=1"
+                fetch(link)
+                .then((response) =>{
+                    return response.json();
+                })
+                .then((data) => {
+                    document.getElementById("visitors").innerHTML = data.value;
+                })
+            }
+    </script>
 
 </body>
 </html>
