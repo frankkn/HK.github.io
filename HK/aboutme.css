@@ -48,7 +48,7 @@
 
 .card{
     background-color: beige;
-    height:500px;
+    height:600px;
     width:30%;
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
@@ -76,20 +76,43 @@
     height:68px;
     border:none;
     font-size:20px;
-    color:white;
+    color:lightblue;
     background-color: blueviolet;
     padding:20px;
     position:absolute;
     bottom:0;
     left:0;
+
+    transition: 0.5s ease-in;
+    z-index: 1;
+    border-radius: 15px;
 }
 
 .card-body .btn:hover{
-    color:gold;
+    color:navy;
 }
 
 footer{
     height:70px;
     background-color:rgb(185, 197, 209);
     padding-top:23px;
+}
+
+.card-body .btn::before{
+    background-color: lightblue;
+    content:"";
+    position:absolute;
+    top:0;
+    left:50%;
+    right:50%;
+    bottom:0;
+    transition:0.5s all ease;
+}
+
+.card-body .btn:hover::before{
+    transition:0.5s all ease;
+    left:0;
+    right:0;
+    border-radius: 15px;
+    z-index:-1;
 }
