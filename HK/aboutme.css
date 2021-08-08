@@ -67,8 +67,10 @@
     border-top-right-radius: 20%;
 }
 
-.card-title ,.card-text{
+.card-title,.card-text{
     text-align: center;
+    line-height:20px;
+    font-family: system-ui;
 }
 
 .card-body .btn{
