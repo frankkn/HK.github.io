@@ -8,8 +8,14 @@
     <!-- Boostrap5.0 導入程式 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!--連結JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <!--連結isotope-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
 
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="scenery.css">
 </head>
 <body>
     
@@ -52,6 +58,172 @@
         </div>
     </nav>
     
+    <!--第三層 三欄位-->
+    <div class="container-fluid">
+        <div class="row content">
+            <!--左邊欄位-->
+            <div class="col-sm-2 sidenav">
 
+            </div>
+            <!--中間欄位-->
+            <div class="col-sm-8 main-content text-left">
+                <h1>香港風景</h1>
+                <!--按鈕-->
+                <div class="allbuttons">
+                    <button class="button" data-filter=".all">全部</button>
+                </div>
+                <div class="filters">
+                    <button class="button" data-filter=".迪心湖">迪心湖</button>
+                    <button class="button" data-filter=".維多利亞港">維多利亞港</button>
+                    <button class="button" data-filter=".長洲">長洲</button>
+                    <button class="button" data-filter=".橋咀島和廈門灣">橋咀島和廈門灣</button>
+                    <button class="button" data-filter=".海洋公園">海洋公園</button>
+                    <button class="button" data-filter=".太平山">太平山</button>
+                    <button class="button" data-filter=".中環">中環</button>
+                    <button class="button" data-filter=".赤柱">赤柱</button>
+                    <button class="button" data-filter=".海下灣">海下灣</button>
+                    <button class="button" data-filter=".昂坪和大澳漁村">昂坪和大澳漁村</button>
+                    <button class="button" data-filter=".澳門">特別篇 - 澳門</button>
+                </div>
+                <!--圖片-->
+                <div class="grid">
+                    <div class="items 迪心湖"><img src="images/迪心湖/迪心湖1.JPG"></div>
+                    <div class="items 迪心湖"><img src="images/迪心湖/迪心湖2.JPG"></div>
+                    <div class="items 迪心湖"><img src="images/迪心湖/迪心湖3.JPG"></div>
+                    <div class="items 迪心湖"><img src="images/迪心湖/迪心湖4.JPG"></div>
+                    <div class="items 迪心湖"><img src="images/迪心湖/迪心湖5.JPG"></div>
+                    <div class="items 迪心湖"><img src="images/迪心湖/迪心湖6.JPG"></div>
+                    <div class="items 迪心湖"><img src="images/迪心湖/迪心湖7.JPG"></div>
+                    <div class="items 迪心湖"><img src="images/迪心湖/迪心湖8.JPG"></div>
+                    <div class="items 維多利亞港"><img src="images/維多利亞港/維多利亞港1.JPG"></div>
+                    <div class="items 維多利亞港"><img src="images/維多利亞港/維多利亞港2.JPG"></div>
+                    <div class="items 維多利亞港"><img src="images/維多利亞港/維多利亞港3.JPG"></div>
+                    <div class="items 維多利亞港"><img src="images/維多利亞港/維多利亞港4.JPG"></div>
+                    <div class="items 維多利亞港"><img src="images/維多利亞港/維多利亞港5.JPG"></div>
+                    <div class="items 維多利亞港"><img src="images/維多利亞港/維多利亞港6.JPG"></div>
+                    <div class="items 維多利亞港"><img src="images/維多利亞港/維多利亞港7.JPG"></div>
+                    <div class="items 維多利亞港"><video width="100%;" height="80%;" style="margin-top:30px;" controls><source src="images/維多利亞港/幻彩詠香江.MOV"></video></div>
+                    <div class="items 長洲"><img src="images/長洲/長洲1.JPG"></div>
+                    <div class="items 長洲"><img src="images/長洲/長洲2.JPG"></div>
+                    <div class="items 長洲"><img src="images/長洲/長洲3.JPG"></div>
+                    <div class="items 長洲"><img src="images/長洲/長洲4.JPG"></div>
+                    <div class="items 長洲"><img src="images/長洲/長洲5.JPG"></div>
+                    <div class="items 長洲"><img src="images/長洲/長洲6.JPG"></div>
+                    <div class="items 長洲"><img src="images/長洲/長洲7.JPG"></div>
+                    <div class="items 長洲"><img src="images/長洲/長洲8.JPG"></div>
+                    <div class="items 長洲"><img src="images/長洲/長洲9.JPG"></div>
+                    <div class="items 長洲"><img src="images/長洲/長洲10.JPG"></div>
+                    <div class="items 長洲"><img src="images/長洲/長洲11.JPG"></div>
+                    <div class="items 橋咀島和廈門灣"><img src="images/橋咀島和廈門灣/橋咀島和廈門灣1.JPG"></div>
+                    <div class="items 橋咀島和廈門灣"><img src="images/橋咀島和廈門灣/橋咀島和廈門灣2.JPG"></div>
+                    <div class="items 橋咀島和廈門灣"><img src="images/橋咀島和廈門灣/橋咀島和廈門灣3.JPG"></div>
+                    <div class="items 橋咀島和廈門灣"><img src="images/橋咀島和廈門灣/橋咀島和廈門灣4.JPG"></div>
+                    <div class="items 橋咀島和廈門灣"><img src="images/橋咀島和廈門灣/橋咀島和廈門灣5.JPG"></div>
+                    <div class="items 橋咀島和廈門灣"><img src="images/橋咀島和廈門灣/橋咀島和廈門灣6.JPG"></div>
+                    <div class="items 橋咀島和廈門灣"><img src="images/橋咀島和廈門灣/橋咀島和廈門灣7.JPG"></div>
+                    <div class="items 橋咀島和廈門灣"><img src="images/橋咀島和廈門灣/橋咀島和廈門灣8.JPG"></div>
+                    <div class="items 橋咀島和廈門灣"><img src="images/橋咀島和廈門灣/橋咀島和廈門灣9.JPG"></div>
+                    <div class="items 橋咀島和廈門灣"><img src="images/橋咀島和廈門灣/橋咀島和廈門灣10.JPG"></div>
+                    <div class="items 橋咀島和廈門灣"><img src="images/橋咀島和廈門灣/橋咀島和廈門灣11.JPG"></div>
+                    <div class="items 橋咀島和廈門灣"><img src="images/橋咀島和廈門灣/橋咀島和廈門灣12.JPG"></div>
+                    <div class="items 橋咀島和廈門灣"><img src="images/橋咀島和廈門灣/橋咀島和廈門灣13.JPG"></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園1.JPG"></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園2.JPG"></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園3.JPG"></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園4.JPG"></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園5.JPG"></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園6.JPG"></div>
+                    <div class="items 海洋公園"><video width="100%;" height="80%;" style="margin-top:30px;" controls><source src="images/海洋公園/海洋公園7.MOV"></video></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園8.JPG"></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園9.JPG"></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園10.JPG"></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園11.JPG"></div>
+                    <div class="items 海洋公園"><video width="100%;" height="700px;" style="margin-top:30px;"controls><source src="images/海洋公園/海洋公園12.MOV"></video></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園13.JPG"></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園14.JPG"></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園15.JPG"></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園16.JPG"></div>
+                    <div class="items 海洋公園"><video width="100%;" height="700px;" style="margin-top:30px;" controls><source src="images/海洋公園/海洋公園17.MOV"></video></div>
+                    <div class="items 海洋公園"><video width="100%;" height="80%;" style="margin-top:30px;" controls><source src="images/海洋公園/海洋公園18.MOV"></video></div>
+                    <div class="items 海洋公園"><video width="100%;" height="700px;" style="margin-top:30px;" controls><source src="images/海洋公園/海洋公園19.MOV"></video></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園20.JPG"></div>
+                    <div class="items 海洋公園"><video width="100%;" height="700px;" style="margin-top:30px;" controls><source src="images/海洋公園/海洋公園21.MOV"></video></div>
+                    <div class="items 海洋公園"><video width="100%;" height="700px;" style="margin-top:30px;" controls><source src="images/海洋公園/海洋公園22.MOV"></video></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園23.JPG"></div>
+                    <div class="items 海洋公園"><video width="100%;" height="700px;" style="margin-top:30px;" controls><source src="images/海洋公園/海洋公園24.MOV"></video></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園25.JPG"></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園26.JPG"></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園27.JPG"></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園28.JPG"></div>
+                    <div class="items 海洋公園"><img src="images/海洋公園/海洋公園29.JPG"></div>
+                    <div class="items 太平山"><img src="images/太平山/太平山1.JPG"></div>
+                    <div class="items 太平山"><img src="images/太平山/太平山2.JPG"></div>
+                    <div class="items 太平山"><img src="images/太平山/太平山3.JPG"></div>
+                    <div class="items 中環"><img src="images/中環/中環1.JPG"></div>
+                    <div class="items 中環"><img src="images/中環/中環2.JPG"></div>
+                    <div class="items 中環"><img src="images/中環/中環3.JPG"></div>
+                    <div class="items 中環"><img src="images/中環/中環4.JPG"></div>
+                    <div class="items 中環"><img src="images/中環/中環5.JPG"></div>
+                    <div class="items 中環"><img src="images/中環/中環6.JPG"></div>
+                    <div class="items 赤柱"><img src="images/赤柱/赤柱1.JPG"></div>
+                    <div class="items 赤柱"><img src="images/赤柱/赤柱2.JPG"></div>
+                    <div class="items 赤柱"><img src="images/赤柱/赤柱3.JPG"></div>
+                    <div class="items 赤柱"><img src="images/赤柱/赤柱4.JPG"></div>
+                    <div class="items 赤柱"><img src="images/赤柱/赤柱5.JPG"></div>
+                    <div class="items 海下灣"><img src="images/海下灣/海下灣1.JPG"></div>
+                    <div class="items 海下灣"><img src="images/海下灣/海下灣2.JPG"></div>
+                    <div class="items 海下灣"><img src="images/海下灣/海下灣3.JPG"></div>
+                    <div class="items 海下灣"><img src="images/海下灣/海下灣4.JPG"></div>
+                    <div class="items 海下灣"><img src="images/海下灣/海下灣5.JPG"></div>
+                    <div class="items 海下灣"><img src="images/海下灣/海下灣6.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/昂坪1.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/昂坪2.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/昂坪3.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/昂坪4.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/昂坪5.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/昂坪6.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/昂坪7.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/昂坪8.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/昂坪9.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/昂坪10.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/昂坪11.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/昂坪12.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/昂坪13.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/昂坪14.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/昂坪15.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/大澳1.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/大澳2.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/大澳3.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/大澳4.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/大澳5.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><video width="100%;" height="700px;" style="margin-top:30px;" controls><source src="images/昂坪和大澳漁村/大澳6.MOV"></video></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/大澳7.JPG"></div>
+                    <div class="items 昂坪和大澳漁村"><img src="images/昂坪和大澳漁村/大澳8.JPG"></div>
+                    <div class="items 澳門"><img src="images/澳門/澳門1.JPG"></div>
+                    <div class="items 澳門"><img src="images/澳門/澳門2.JPG"></div>
+                    <div class="items 澳門"><img src="images/澳門/澳門3.JPG"></div>
+                    <div class="items 澳門"><img src="images/澳門/澳門4.JPG"></div>
+                    <div class="items 澳門"><img src="images/澳門/澳門5.JPG"></div>
+                    <div class="items 澳門"><img src="images/澳門/澳門6.JPG"></div>
+                    <div class="items 澳門"><img src="images/澳門/澳門7.JPG"></div>
+                    <div class="items 澳門"><img src="images/澳門/澳門8.JPG"></div>
+                    <div class="items 澳門"><img src="images/澳門/澳門9.JPG"></div>
+                    <div class="items 澳門"><img src="images/澳門/澳門10.JPG"></div>
+                </div>
+
+            </div>
+            <!--右邊欄位-->
+            <div class="col-sm-2 sidenav">
+
+            </div>
+        </div>
+    </div>
+
+    <!--第四層 Footer-->
+    <footer class="container-fluid text-center">
+        <p>Written by Frank Yang &copy;</p>
+    </footer>
+
+    <script src="scenery.js"></script>
 </body>
 </html>
