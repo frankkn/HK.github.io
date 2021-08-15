@@ -26,7 +26,7 @@
 }
 
 .intro{
-    margin-top:40px;
+    margin-top:30px;
 }
 
 .sidenav{
@@ -76,9 +76,9 @@ footer{
 
 @media(max-width:600px){
     .main-content p{
-        padding-left:30px;
-        padding-right:30px;
-
+        padding-left:25px;
+        padding-right:25px;
+        text-indent: 64px;
     }
     footer{
         position:absolute;
