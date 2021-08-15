@@ -40,3 +40,11 @@
     font-weight: 300;
     margin-bottom: 20px;
 }
+
+@media(max-width:600px){
+    .calendar{
+        position:relative;
+        margin-top:50px;
+        margin-left:12px;
+    }
+}

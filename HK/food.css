@@ -1,0 +1,23 @@
+.content{
+    height:758px;
+}
+
+.main-content h1{
+    text-align: center;
+    padding:20px;
+}
+
+.main-content{
+    background-color: rgb(228, 252, 252);
+}
+
+.sidenav{
+    padding-top:30px;
+    background-color:rgb(220, 228, 228);
+}
+
+footer{
+    height:70px;
+    background-color:rgb(185, 197, 209);
+    padding-top:23px;
+}

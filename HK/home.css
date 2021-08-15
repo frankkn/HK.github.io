@@ -2,22 +2,37 @@
     height:758px;
 }
 
+.main-content{
+    background-color:aliceblue;
+} 
+
 .main-content h1{
     text-align: center;
     padding:20px;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    text-shadow: 3px 3px 3px blanchedalmond;
 }
 
 .main-content p{
-    text-indent: 62px;
-    font-size:25px;
+    text-indent: 66px;
+    font-size:28px;
+    letter-spacing: 5px;
     line-height: 50px;
-    padding-left:60px;
-    padding-right:60px;
+    padding-left:70px;
+    padding-right:70px;
+    font-family: 'Noto Sans TC', sans-serif;
+    color:palevioletred;
+}
+
+.intro{
+
+    margin-left:20px;
+    margin-right:20px;
 }
 
 .sidenav{
     padding-top:30px;
-    background-color:rgb(185, 228, 228);
+    background-color:rgb(229, 249, 252);
 }
 
 .sidenav h4{
@@ -27,20 +42,7 @@
     font-size:25px;
     padding:20px;
 }
-/*
-.sidenav a{
-    text-align: left;
-    text-decoration:none;
-    color:navy;
-    font-size:20px;
-    padding:20px;
-}
 
-.sidenav a:hover{
-    color:oldlace;
-
-}
-*/
 .btn-link{
     text-decoration:none;
     background-color:mistyrose;
