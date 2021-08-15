@@ -69,3 +69,14 @@ footer{
     padding-top:23px;
 }
 
+@media(max-width:600px){
+    .main-content p{
+        padding-left:30px;
+        padding-right:30px;
+
+    }
+    footer{
+        position:absolute;
+        top:435%;
+    }
+}
