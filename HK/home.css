@@ -15,19 +15,13 @@
 
 .main-content p{
     text-indent: 66px;
-    font-size:28px;
+    font-size:25px;
     letter-spacing: 5px;
     line-height: 50px;
-    padding-left:70px;
-    padding-right:70px;
+    padding-left:60px;
+    padding-right:60px;
     font-family: 'Noto Sans TC', sans-serif;
     color:palevioletred;
-}
-
-.intro{
-
-    margin-left:20px;
-    margin-right:20px;
 }
 
 .sidenav{

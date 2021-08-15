@@ -38,8 +38,15 @@
 @media (max-width:600px){
     .counter{
         position: absolute;
-        top: 145%;
+        top: 135%;
         left: 75%;
         transform: translate(-50%, -50%);
+
+        width: 130px;
+        height: 100px;
+    }
+    .counter p {
+        margin-top:0px;
+        font-size: 10px;
     }
 }
