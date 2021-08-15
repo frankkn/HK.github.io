@@ -31,9 +31,9 @@ footer{
 }
 
 .allbuttons button{
-    /* float:left; */
-    margin-left:10px;
+    /*float:left;*/
     margin-bottom:20px;
+    margin-left:20px;
     border-radius: 10px;
     background-color:rgb(247, 208, 170);
     font-size:25px;
@@ -41,7 +41,7 @@ footer{
 }
 
 .filters button{
-    margin-left:10px;
+    margin-left:20px;
     margin-bottom:20px;
     border-radius: 10px;
     background-color:rgb(247, 208, 170);
