@@ -74,3 +74,12 @@ footer{
     align-items: center;
 }
 
+@media(max-width:600px){
+    .allbuttons button{
+        margin-left:2px;
+    }
+    .filters button{
+        margin-left:2px;
+    }
+
+}
