@@ -20,6 +20,9 @@ li a{
 li a:hover{
     color:darkorange !important;
     background-color:wheat;
+    transition: 1s;
+    padding:15px 20px 15px 20px;
+    border-radius: 10px;
 }
 
 .navbar-toggler{
@@ -35,6 +38,8 @@ li a:hover{
         height:auto;
     }
     .nav-link{
-        padding:10px;
+        padding-top:10px;
+        text-align: center;
     }
+
 }
