@@ -125,7 +125,7 @@ footer p{
         /* 固定在下方*/
         position:fixed;
         bottom:-70px;
-        left:38%;
+        left:40%;
         transform:translate(-50%);
     }
     .simple-pagination li{
