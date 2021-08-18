@@ -24,7 +24,6 @@ footer{
     margin-top:30px;
 }
 
-
 #dropdown{
     margin-left: 50px;
     font-size:20px;
@@ -81,4 +80,12 @@ footer{
     .filters button{
         margin-left:2px;
     }
+}
+
+.horizontal img{
+    width:80%;
+}
+
+.vertical img{
+    width:50%;
 }
