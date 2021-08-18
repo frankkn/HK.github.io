@@ -121,6 +121,13 @@ footer p{
 }
 
 @media(max-width:600px){
+    .simple-pagination ul{
+        /* 固定在下方*/
+        position:fixed;
+        bottom:-70px;
+        left:40%;
+        transform:translate(-50%);
+    }
     .simple-pagination li{
         display:inline-block;
         margin-right:0px;
