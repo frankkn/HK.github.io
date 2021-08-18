@@ -17,7 +17,7 @@ li a{
     margin-left:20px;
 }
 
-li a:hover{
+.nav-bar li a:hover{
     color:darkorange !important;
     background-color:wheat;
     transition: 1s;
