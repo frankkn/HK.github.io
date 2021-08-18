@@ -121,6 +121,10 @@ footer p{
 }
 
 @media(max-width:600px){
+    .simple-pagination li{
+        display:inline-block;
+        margin-right:0px;
+    }
     .simple-pagination a{
         font-size:20px;
         padding: 3px 3px 3px 3px;
