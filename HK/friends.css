@@ -130,15 +130,15 @@ footer p{
     }
     .simple-pagination li{
         display:inline-block;
-        margin-right:0px;
+        margin-right:-12px;
     }
     .simple-pagination a{
         font-size:20px;
-        padding: 3px 3px 3px 3px;
+        padding: 5px 12px 5px 12px;
     }
     .simple-pagination .current{
         font-size:18px;
-        padding: 3px 3px 3px 3px;
+        padding: 5px 12px 5px 12px;
     }
     #photos img{
         display:block;
