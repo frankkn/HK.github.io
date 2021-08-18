@@ -1,10 +1,14 @@
 .content{
-    height:758px;
+    height:1468px;
 }
 
 .main-content h1{
     text-align: center;
     padding:20px;
+    text-decoration-line:underline;
+    color:rgb(199, 50, 94);
+    text-shadow: 0 0 3px lightblue, 0 0 20px navy;
+    animation:colorchange 10s infinite alternate;
 }
 
 .main-content{
@@ -17,7 +21,151 @@
 }
 
 footer{
+    position: absolute;
+    bottom:-870px;
     height:70px;
     background-color:rgb(185, 197, 209);
     padding-top:23px;
+}
+
+footer p{
+    padding-left: 1080px;
+}
+
+
+.list-item{
+    background-color:aliceblue;
+    border:1px solid gray;
+    padding:20px;
+    margin:10px;
+    width:80%;
+    /*置中*/
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pics img{
+    display:inline-block;
+    margin-left: 100px;
+}
+
+#photos img{
+    display:inline-block;
+    margin-left:0;
+}
+
+
+.list-item img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-item h2{
+    margin-top:20px;
+    text-align: center;
+    font-size:25px;
+    font-weight: bolder;
+    color:midnightblue;
+}
+
+.list-item p{
+    margin-top:20px;
+    text-align: center;
+    font-size:20px;
+}
+
+
+/*頁面按鈕*/
+.simple-pagination ul{
+
+    list-style: none;
+    text-align:center;
+    margin-bottom:80px;
+    
+    /* 固定在下方*/
+    position:fixed;
+    bottom:-70px;
+    left:50%;
+    transform:translate(-50%);
+
+    z-index:1;
+    width:100%;
+}
+
+.simple-pagination li{
+    display:inline-block;
+    margin-right:10px;
+}
+
+.simple-pagination a{/*按鈕的字體*/
+    font-size:30px;
+    color:black;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    border:1px solid brown;
+    background-color: white;
+    box-shadow: 5px 5px 3px black;
+}
+
+.simple-pagination .current{
+    color:rgb(238, 238, 238);
+    background-color: rgb(29, 29, 29);
+    border:1px solid brown;
+    font-size:30px;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 10px 5px 10px;
+    box-shadow: 5px 5px 3px rgb(116, 113, 113);
+}
+
+@media(max-width:600px){
+    .simple-pagination a{
+        font-size:20px;
+        padding: 3px 3px 3px 3px;
+    }
+    .simple-pagination .current{
+        font-size:18px;
+        padding: 3px 3px 3px 3px;
+    }
+    #photos img{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #pics img{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .list-item .vertical{
+        width:100%;
+    }
+    .list-item .horizontal{
+        width:100%;
+    }
+    .list-item p{
+        font-size:20px;
+    }
+    footer{
+        display:none;
+    }
+    .sidenav{
+        display:none;
+    }
+}
+
+@keyframes colorchange {
+    0% {color: #418DCD;}
+    10% {color: #17b473;}
+    20% {color: #c65d20;}
+    30% {color: #a341cd;}
+    40% {color: #03965B;}
+    50% {color: #e91748;}
+    60% {color: #545C5E;}
+    70% {color: #545C5E;}
+    80% {color: #032596;}
+    90% {color: #409603;}
+    100% {color: #418DCD;}
 }
