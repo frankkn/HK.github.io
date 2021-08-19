@@ -1,6 +1,7 @@
 /* 版面配置 */
 .content{
-    height:1468px;
+    /*height:1468px;*/
+    height:600px; 
 }
 
 .main-content h1{
@@ -23,10 +24,12 @@
 
 footer{
     position: absolute;
-    bottom:-870px;
+    /*bottom:-870px;*/
+    bottom: -250px;
     height:70px;
     background-color:rgb(185, 197, 209);
     padding-top:23px;
+    display: none;
 }
 
 footer p{
