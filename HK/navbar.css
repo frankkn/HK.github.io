@@ -20,7 +20,7 @@ li a{
 .navbar-nav li a:hover{
     color:darkorange !important;
     background-color:wheat;
-    transition: 1s;
+    transition: 0.5s;
     padding:15px 20px 15px 20px;
     border-radius: 10px;
 }
@@ -38,7 +38,23 @@ li a{
         padding-top:10px;
         text-align: center;
     }
+
     nav{
         height:auto;
+    }
+    /*交換國旗跟漢堡圖示*/
+    .navbar-brand{
+        order:1;
+        position:absolute;
+        right:1%;
+        top:3%;
+    }
+
+    .navbar-toggler{
+        order:0;
+    }
+
+    .nav-item{
+        margin-top:10px;
     }
 }

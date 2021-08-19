@@ -1,3 +1,4 @@
+/* 版面配置 */
 .content{
     height:1468px;
 }
@@ -32,7 +33,7 @@ footer p{
     padding-left: 1080px;
 }
 
-
+/* 分頁系統 */
 .list-item{
     background-color:aliceblue;
     border:1px solid gray;
@@ -77,17 +78,17 @@ footer p{
 }
 
 
-/*頁面按鈕*/
+    /*頁面按鈕*/
 .simple-pagination ul{
 
     list-style: none;
     text-align:center;
     margin-bottom:80px;
     
-    /* 固定在下方*/
+    /*固定在下方*/
     position:fixed;
     bottom:-70px;
-    left:50%;
+    left:48%;
     transform:translate(-50%);
 
     z-index:1;
@@ -120,6 +121,7 @@ footer p{
     box-shadow: 5px 5px 3px rgb(116, 113, 113);
 }
 
+/* RWD調整 */
 @media(max-width:600px){
     .simple-pagination ul{
         /* 固定在下方*/
@@ -128,40 +130,50 @@ footer p{
         left:41%;
         transform:translate(-50%);
     }
+
     .simple-pagination li{
         display:inline-block;
         margin-right:-12px;
     }
+
     .simple-pagination a{
         font-size:20px;
         padding: 5px 12px 5px 12px;
     }
+
     .simple-pagination .current{
         font-size:18px;
         padding: 5px 12px 5px 12px;
     }
+
     #photos img{
         display:block;
         margin-left: auto;
         margin-right: auto;
     }
+
     #pics img{
         display:block;
         margin-left: auto;
         margin-right: auto;
     }
+
     .list-item .vertical{
         width:100%;
     }
+
     .list-item .horizontal{
         width:100%;
     }
+
     .list-item p{
         font-size:20px;
     }
+
     footer{
         display:none;
     }
+
     .sidenav{
         display:none;
     }
