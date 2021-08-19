@@ -1,7 +1,7 @@
 /* 版面配置 */
 .content{
     /*height:1468px;*/
-    height:600px; 
+    height:auto; 
 }
 
 .main-content h1{
@@ -89,8 +89,9 @@ footer p{
     margin-bottom:80px;
     
     /*固定在下方*/
-    position:fixed;
-    bottom:-70px;
+    position:relative;
+    /* bottom:-70px; */
+    top:20px;
     left:48%;
     transform:translate(-50%);
 
@@ -128,8 +129,8 @@ footer p{
 @media(max-width:600px){
     .simple-pagination ul{
         /* 固定在下方*/
-        position:fixed;
-        bottom:-70px;
+        position:relative;
+        top:10px;
         left:41%;
         transform:translate(-50%);
     }
