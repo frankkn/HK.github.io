@@ -21,3 +21,12 @@ $('.allbuttons').on('click','button',function(){
         filter: '.items'
     });
 });
+
+//回到上層按鈕
+window.onscroll=()=>{
+    if(window.srcollY>60){
+        document.querySelector('#scroll-up').classList.add('active');
+    }else{
+        document.querySelector('#scroll-up').classList.remove('active');
+    }
+}

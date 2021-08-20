@@ -13,13 +13,16 @@
     <!--連結isotope-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="food.css">
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light" id="top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img width="50px;" height="35px;" src="images/香港國旗.png"></a>
             <!--手機版會跑出一個選單按鈕-->
@@ -237,5 +240,8 @@
     </footer>
     
     <script src="scenery.js"></script>
+
+    <!--回上層按鈕-->
+    <a href="#top" class="fas fa-angle-up" id="scroll-up"></a>
 </body>
 </html>

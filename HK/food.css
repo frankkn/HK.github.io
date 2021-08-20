@@ -117,6 +117,24 @@ footer{
     }
 }
 
+/* 回到上層按鈕 */
+#scroll-up{
+    position: fixed;
+    top:90%;
+    right:10px;
+    padding:10px;
+    font-size:25px;
+    background:navy;
+    color:white;
+    border-radius:10px;
+    opacity: 0.8;
+    transition:1s linear;
+}
+
+#scroll-up.active{
+    top:80%;
+}
+
 
 
 
