@@ -1,7 +1,3 @@
-.content{
-    height:758px;
-}
-
 .main-content h1{
     text-align: center;
     padding:20px;
@@ -22,18 +18,6 @@ footer{
     padding-top:23px;
 }
 
-
-.grid img{
-    width:50%;
-    height:50%;
-    margin-top:30px;
-}
-
-
-#dropdown{
-    margin-left: 50px;
-    font-size:20px;
-}
 
 .allbuttons button{
     /*float:left;*/
@@ -64,29 +48,60 @@ footer{
     color:whitesmoke;
 }
 
-.grid{
-    width:auto;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container{
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(auto-fit,minmax(140px,1fr));
+    grid-auto-flow:dense;
 }
 
-.grid .items{
+.container img{
     width:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height:100%;
+    object-fit:cover;
+    box-shadow:3px 3px 3px black;
+}
+
+.container .height{
+    grid-row:span 2;
+}
+
+.container .width{
+    grid-column: span 2;
+}
+
+.container .big{
+    grid-row:span 2;
+    grid-column: span 2;
+}
+
+.container .superbig{
+    grid-row:span 2;
+    grid-column: span 3;
+}
+
+.container .superwidth{
+    grid-row:span 2;
+    grid-column: span 4;
 }
 
 .items p{
-    position: absolute;
     background-color: darkorange;
     color:navy;
     padding:10px;
-    bottom:0px;
-    left:500;
-    font-size:30px;
+    position: relative;
+    margin-top:-50px;
+    font-size:20px;
+    text-align: center;
+}
+
+.container a{
+    text-decoration-line: none;
+}
+
+.香港經典點心, .我家巷口神秘美食, .燒臘集錦, 
+.茶餐廳, .車仔麵, .芒果類, .其他{
+    margin-top: 20px;
 }
 
 @media(max-width:600px){
@@ -98,7 +113,7 @@ footer{
     }
     .items p{
         font-size:15px;
-        padding:0;
+        margin-top: -40px;
     }
 }
 
