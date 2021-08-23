@@ -1,48 +1,38 @@
-.calendar {
+.container-clock{
     position: relative;
     margin-top:80px;
     margin-left:12px;
-    width: 200px;
-    background-color: rgb(255, 255, 255);
+
+    background-color: transparent;
+    border:3px solid midnightblue;
+
+    color:navy;
+    width:200px;
+    padding:20px;
+    border-radius: 40px;
+    transition:1.5s; 
+}
+.container-clock:hover{
+    background-color: beige;
+    color:black;
+    box-shadow:0 0 30px beige;
+}
+.time{
+    font-size:20px;
+    font-weight: 600px;
     text-align: center;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 3px 3px 7px 5px rgb(69, 68, 68);
 }
-.calendar #year {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background-color: brown;
-    color: rgb(255, 255, 255);
+.date{
+    font-size:20px;
+    text-align: center;
+    font-style:italic;
+}
+#period{
     font-size: 20px;
-    font-weight: 500;
-    z-index: 1;
-}
-.calendar #monthName {
-    position: relative;
-    padding: 10px;
-    background-color: brown;
-    color: rgb(247, 247, 247);
-    font-size: 30px;
-    font-weight: 700;
-}
-.calendar #day { /*幾號*/
-    color: rgb(7, 7, 7);
-    height:80px;
-    font-size: 60px;
-    font-weight: 800;
-    padding-top: 0px;
-    }
-.calendar #dayName { /*星期幾*/
-    color: rgb(103, 103, 103);
-    font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 20px;
 }
 
 @media(max-width:600px){
-    .calendar{
+    .container-clock{
         position:relative;
         margin-top:50px;
         margin-left:12px;
