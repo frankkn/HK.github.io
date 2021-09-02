@@ -10,7 +10,14 @@
 
 .main-content ul{
     display: flex;
-    margin-left:300px;
+    /* margin-left:300px;  */
+}
+
+.main-content .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:-50px;
 }
 
 .main-content ul li{
@@ -53,7 +60,10 @@
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
 
-    margin-left:350px;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+
 }
 
 .banner-image{
@@ -117,4 +127,12 @@ footer{
     right:0;
     border-radius: 15px;
     z-index:-1;
+}
+
+@media (max-width:600px) {
+
+    .card{
+        height:600px;
+        width:60%;
+    }
 }
